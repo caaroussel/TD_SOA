@@ -2,7 +2,7 @@
 
 ## Branche
 
-### Main
+### SOAP
 
 Branche contenant les fichiers pour la première implémentation de notre architecture en SOAP
 
