@@ -14,4 +14,3 @@ Branche contenant les fichiers pour l'implémentation de notre architecture en R
 
 Branche contenant le projet d'entrainement aux différentes fonctionnalités des REST
 
-### Micro-Service
