@@ -1,17 +1,26 @@
-package TD;
+package fr.insa.soa.RestProject;
 
-import javax.jws.WebMethod;
-import javax.jws.WebParam;
-import javax.jws.WebService;
-@WebService(serviceName="UserService")
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.PUT;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.core.MediaType;
+
+@Path("userservice")
+
 public class UserService {
-    @WebMethod(operationName = "addUser")
-    public void addUser (@WebParam(name = "NHelpUser") NHelpUser user)
+    @PUT
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void addUser (NHelpUser user)
     {
         System.out.println("User with the name " + user.getName() + "the age " + String.valueOf(user.getAge()) + " and mission name" + user.getMission().getName());
     }
-    @WebMethod(operationName = "GetUserWithID")
-    public NHelpUser getUserWithID (@WebParam(name = "id") int id)
+    
+    
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public NHelpUser getUserWithID (int id)
     {
         NHelpUser user = new NHelpUser();
         user.setAge(id);

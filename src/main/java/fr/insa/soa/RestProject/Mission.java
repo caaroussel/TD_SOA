@@ -1,8 +1,5 @@
-package TD;
+package fr.insa.soa.RestProject;
 
-import javax.jws.WebMethod;
-import javax.jws.WebParam;
-import javax.jws.WebService;
 public class Mission {
     private String name;
     private String status;

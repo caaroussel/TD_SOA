@@ -1,4 +1,4 @@
-package TD;
+package fr.insa.soa.RestProject;
 
 public class NHelpUser {
     private String name;
